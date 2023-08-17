@@ -7,7 +7,7 @@ function Main() {
           <div className="greeting">
             <h1>Hi<span className="coma">,</span></h1>
             <h1>I am <span className="name">Kirana Cascade</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque voluptas nihil totam quo atque repudiandae, sunt iure inventore, obcaecati facilis eaque voluptates necessitatibus, aliquid ducimus voluptate tenetur nam laboriosam.</p>
+            <p>I'm a Visual Communication Design graduate who has ventured into Full Stack Web Development, aspiring to blend design finesse with coding expertise in crafting captivating digital experiences. On a continuous journey of learning and growth, I eagerly explore the dynamic convergence of creativity and technology. Let's embark on this exciting path together!</p>
             <button className="get-in-touch">Get in Touch</button>
             <button className="cv">Download CV</button>
           </div>
