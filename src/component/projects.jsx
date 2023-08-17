@@ -10,7 +10,7 @@ export default function Projects() {
           <div className="relative lg:-my-8">
             <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/4 bg-white lg:hidden" />
             <div className="mx-auto max-w-md px-6 h-full sm:max-w-3xl lg:h-full lg:p-0">
-              <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none h-full lg:h-full hover:-translate-y-2 transition duration-300 ">
+              <div data-aos="fade-up" className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none h-full lg:h-full hover:-translate-y-2 transition duration-300 ">
                 <img className="relative object-cover h-full w-full max-w-full z-10" src={mockup} alt="" />
               </div>
             </div>
@@ -18,7 +18,7 @@ export default function Projects() {
           <div className="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
             <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0 lg:py-20">
               <blockquote>
-                <div>
+                <div data-aos="fade-left">
                   <h2 className="text-2xl font-bold text-white mb-3 opacity-80 tracking-wide">PROJECTS</h2>
                   <img src={picture} alt="Groceria logo" className="h-12 mt-6" />
                   <p className="mt-6 text-md text-white">
@@ -27,8 +27,12 @@ export default function Projects() {
                   </p>
                 </div>
                 <footer className="mt-6">
-                  <div class="mt-10 flex justify-center gap-8 lg:justify-start">
-                    <a class="rounded-lg text-white font-semibold transition flex items-center gap-3 text-[0.8125rem] leading-6 py-1 px-1.5 hover:bg-white/[0.15] -my-1 -mx-1.5 pr-4" href="https://github.com/purwadhikafullstack/JCWDOL0905">
+                  <div data-aos="fade-up" class="mt-10 flex justify-center gap-8 lg:justify-start">
+                    <a
+                      class="rounded-lg border text-white font-semibold transition flex items-center gap-3 text-[0.8125rem] leading-6 py-1 px-1.5 hover:bg-white/[0.15] -my-1 -mx-1.5 pr-4"
+                      target="_blank"
+                      href="https://github.com/purwadhikafullstack/JCWDOL0905"
+                    >
                       <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-white">
                         <path
                           fill-rule="evenodd"
@@ -38,7 +42,11 @@ export default function Projects() {
                       </svg>
                       Documentation
                     </a>
-                    <a class="rounded-lg text-white font-semibold transition flex items-center gap-3 text-[0.8125rem] leading-6 py-1 px-1.5 hover:bg-white/[0.15] -my-1 -mx-1.5 pr-4" href="https://jcwdol0905.purwadhikabootcamp.com/">
+                    <a
+                      class="rounded-lg border text-white font-semibold transition flex items-center gap-3 text-[0.8125rem] leading-6 py-1 px-1.5 hover:bg-white/[0.15] -my-1 -mx-1.5 pr-4"
+                      target="_blank"
+                      href="https://jcwdol0905.purwadhikabootcamp.com/"
+                    >
                       <RocketLaunchIcon className="ml-1 h-5 w-5" aria-hidden="true" />
                       Live project
                     </a>

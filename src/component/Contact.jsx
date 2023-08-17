@@ -68,14 +68,20 @@ export default function Contact() {
     <section id="contact" className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
         <div className="flex flex-col items-center my-2">
-          <h2 className="text-4xl font-bold text-dark mb-4">Get in touch</h2>
-          <p className="mt-2">Feel free to reach out anytime!</p>
-          <p className="">Have something to discuss? Don't hesitate to contact me!</p>
+          <h2 data-aos="fade-up" className="text-4xl font-bold text-dark mb-4">
+            Get in touch
+          </h2>
+          <p data-aos="fade-up" className="mt-2">
+            Feel free to reach out anytime!
+          </p>
+          <p data-aos="fade-up" className="">
+            Have something to discuss? Don't hesitate to contact me!
+          </p>
         </div>
 
-        <div className="mt-12 flex justify-center space-x-10">
+        <div data-aos="fade-up" className="mt-12 flex justify-center space-x-10">
           {navigation.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <a key={item.name} target="_blank" href={item.href} className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-7 w-7" aria-hidden="true" />
             </a>

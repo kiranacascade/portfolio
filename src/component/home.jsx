@@ -1,9 +1,10 @@
 import picture from "../assets/kirana-cascade.png";
 import Contact from "./Contact";
 import Feeds from "./feeds";
-import Header from "./header";
 import Projects from "./projects";
 import Skills from "./skills";
+import cv from "../assets/pdf/cv-kirana-cascade.pdf";
+import Header from "./header";
 
 export default function Home() {
   return (
@@ -11,9 +12,9 @@ export default function Home() {
       <Header />
       {/* Hero section */}
       <section id="home" className="pt-36 md:pt-0">
-        <div className="container ">
+        <div className="container">
           <div className="flex flex-wrap min-h-screen">
-            <div className="w-full self-center px-4 md:w-1/2 lg:w-7/12">
+            <div data-aos="fade-right" className="w-full self-center px-4 md:w-1/2 lg:w-7/12">
               <h1 className="text-4xl font-bold text-dark lg:text-6xl">
                 Hi<span className="text-gray">,</span>
               </h1>
@@ -25,11 +26,11 @@ export default function Home() {
                 A <b>Visual Communication Design graduate</b> exploring <b>Full Stack Web Development</b>, fusing design finesse with coding for captivating digital experiences. On a continuous journey of learning and growth, I eagerly
                 explore the dynamic convergence of creativity and technology. Let's embark on this exciting path together!
               </p>
-              <a href="#" className="text-white text-base font-semibold bg-primary py-2 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+              <a href={cv} download="cv-kirana-cascade.pdf" className="text-white text-base font-semibold bg-primary py-2 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
                 Download CV
               </a>
             </div>
-            <div className="w-full self-end px-4 md:w-1/2 lg:w-5/12">
+            <div data-aos="fade-left" className="w-full self-end px-4 md:w-1/2 lg:w-5/12">
               <div className="relative lg:right-0">
                 <div className="absolute top-4 -left-4 w-72 h-72 md:scale-125 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                 <div className="absolute top-4 right-10 lg:-righ-4 w-72 h-72 md:scale-125 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob animation-delay-2000"></div>
@@ -48,7 +49,7 @@ export default function Home() {
       <section id="about" className="pt-20 pb-32">
         <div className="container">
           <div className="flex flex-wrap">
-            <div className="w-full px-4 mb-10 lg:w-1/2">
+            <div data-aos="fade-right" className="w-full px-4 mb-10 lg:w-1/2">
               <div className="relative lg:right-0">
                 <div className="absolute top-4 -left-0 w-72 h-72 md:scale-125 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob"></div>
                 <div className="absolute top-4 right-10 lg:right-12 w-72 h-72 md:scale-125 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -58,7 +59,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full mt-4 px-4 lg:w-1/2 my-auto">
+            <div data-aos="fade-left" className="w-full mt-4 px-4 lg:w-1/2 my-auto">
               <h2 className="text-3xl font-bold text-darkGray mb-4">ABOUT ME</h2>
               <p className="mb-2 text-darkGray">
                 Hello! I'm Kirana Devita Cascade, a Visual Communication Design graduate and a <b>passionate graphic designer evolved into a tech enthusiast</b>. I ventured into crafting diverse designs, including captivating web

@@ -1,21 +1,21 @@
-import React, { Component } from "react";
-import Navbar from "./component/navbar";
-import Main from "./component/main";
-import Footer from "./component/footer";
+import React, { useEffect } from "react";
 import "./css/style.css";
 import Home from "./component/home";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Home />
-        {/* <Navbar />
-        <Main />
-        <Footer /> */}
-      </div>
-    );
-  }
-}
+const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+    });
+  }, []);
+  return (
+    <div>
+      <Home />
+    </div>
+  );
+};
 
 export default App;
